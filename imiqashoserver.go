@@ -7,11 +7,14 @@ import (
 	"log"
 	"github.com/jinzhu/now"
 	"gopkg.in/mgo.v2/bson"
+	"time"
+	"github.com/aodin/date"
 )
 
 type App struct {
 
 	Session *mgo.Session
+	now.Now
 }
 
 func (a *App) Initialize() {
@@ -79,11 +82,9 @@ func Delete(i EntityInterface) (string, error) {
 
 //**************************Financial Period *******************************//
 
-/* Wrapper for period collection. Allows bulk insert.
-   I have chosen not to use this. It makes the mongo objects structure a bit annoying to deal with.*/
 type P struct {
 
-	Collection []Period
+	Date time.Time
 }
 
 type Period struct {
@@ -95,10 +96,34 @@ type Period struct {
 	Start string 	`json:"start_date,omitempty"`
 	End string 	`json:"end_date,omitempty"`
 	Year int	`json:"year,omitempty"`
-	Month string	`json:"month,omitempty"`
+	Month int	`json:"month,omitempty"`
 }
 
-func (a *App) CreateFinancialPeriodRange (start_date string, no_of_months int) (error) {
+func (p *P) GetPeriod () (Period, error) {
+
+	actual_date := date.New(p.Date.Date())
+
+	ps, err := ReadFinancialPeriodRange("open")
+
+	if err != nil {
+
+		return Period{}, err
+	}
+
+	for _, period := range ps {
+
+		p_range := date.EntireMonth(period.Year, time.Month(period.Month))
+		if actual_date.Within(p_range){
+
+			return period, nil
+		}
+	}
+
+	return Period{}, nil
+}
+
+
+func CreateFinancialPeriodRange (start_date string, no_of_months int) (error) {
 
 	collection := AppCollection().DB("feerlaroc").C("periods")
 
@@ -117,12 +142,12 @@ func (a *App) CreateFinancialPeriodRange (start_date string, no_of_months int) (
 		start := now.New(current).BeginningOfMonth().String()
 		end := now.New(current).EndOfMonth().String()
 
-		month := now.New(current).Month().String()
+		month := now.New(current).Month()
 		year := now.New(current).Year()
 
 		name := fmt.Sprintf("%s-%d", month, year)
 
-		period := Period{i, name, start, end,"open", year, month}
+		period := Period{i, name, start, end,"open", year, int(month)}
 
 		collection.Insert(period)
 
@@ -131,7 +156,7 @@ func (a *App) CreateFinancialPeriodRange (start_date string, no_of_months int) (
 	return nil
 }
 
-func (a *App) ReadFinancialPeriodRange (status string) ([]Period, error) {
+func ReadFinancialPeriodRange (status string) ([]Period, error) {
 
 	collection := AppCollection().DB("feerlaroc").C("periods")
 
@@ -146,7 +171,7 @@ func (a *App) ReadFinancialPeriodRange (status string) ([]Period, error) {
 	return ps, nil
 }
 
-func (a *App) RemoveFinancialPeriodRange() error {
+func RemoveFinancialPeriodRange() error {
 
 	collection := AppCollection().DB("feerlaroc").C("periods")
 
