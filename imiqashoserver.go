@@ -122,6 +122,26 @@ func (p *P) GetPeriod () (Period, error) {
 	return Period{}, nil
 }
 
+func GetPeriod (name string) (Period, error) {
+
+	ps, err := ReadFinancialPeriodRange("open")
+
+	if err != nil {
+
+		return Period{}, err
+	}
+
+	for _, period := range ps {
+
+		//p_range := date.EntireMonth(period.Year, time.Month(period.Month))
+		if period.Name == name{
+
+			return period, nil
+		}
+	}
+
+	return Period{}, nil
+}
 
 func CreateFinancialPeriodRange (start_date string, no_of_months int) (error) {
 
@@ -147,7 +167,7 @@ func CreateFinancialPeriodRange (start_date string, no_of_months int) (error) {
 
 		name := fmt.Sprintf("%s-%d", month, year)
 
-		period := Period{i, name, start, end,"open", year, int(month)}
+		period := Period{i, name, "open", start,end, year, int(month)}
 
 		collection.Insert(period)
 
