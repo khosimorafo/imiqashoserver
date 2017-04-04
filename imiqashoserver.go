@@ -111,7 +111,7 @@ func (p *P) GetProRataDays() (float64, error)  {
 
 	perc := percent.PercentOf(days, all)
 
-	return perc, nil
+	return perc/100, nil
 }
 
 func (p *P) GetDaysLeft() (int, int,error)  {
