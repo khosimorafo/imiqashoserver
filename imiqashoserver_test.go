@@ -5,6 +5,7 @@ import (
 	"os"
 	"github.com/khosimorafo/imiqashoserver"
 	"time"
+	"github.com/jinzhu/now"
 )
 
 var a imiqashoserver.App
@@ -53,6 +54,28 @@ func TestReadFinancialPeriodRange(t *testing.T) {
 	}
 
 	t.Log(len(ps))
+}
+
+func TestGetDaysLeft(t *testing.T) {
+
+	start_date, err1 := now.Parse("2017-04-14")
+
+	if err1 != nil{
+
+		t.Error("Failed to parse date : %v",err1)
+		return
+	}
+	period := imiqashoserver.P{start_date}
+
+	days, err := period.GetDaysLeft()
+
+	if err != nil{
+
+		t.Error("Failed to get number of days : %v",err)
+		return
+	}
+
+	t.Log("No of days left is ", days)
 }
 
 func TestGetPeriod(t *testing.T) {

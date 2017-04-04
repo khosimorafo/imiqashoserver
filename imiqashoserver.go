@@ -99,6 +99,29 @@ type Period struct {
 	Month int	`json:"month,omitempty"`
 }
 
+func (p *P) GetDaysLeft() (int,error)  {
+
+	period, err := p.GetPeriod()
+
+	if err != nil {
+
+		return -1, err
+	}
+
+	end, err1 := now.Parse(period.End)
+	if err1 != nil {
+
+		return -1, err
+	}
+
+	var no_of_days date.Range
+	no_of_days.Start = date.New(p.Date.Date())
+	no_of_days.End = date.New(end.Date())
+
+	return no_of_days.Days(), nil
+
+}
+
 func (p *P) GetPeriod () (Period, error) {
 
 	actual_date := date.New(p.Date.Date())
