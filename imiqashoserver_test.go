@@ -25,7 +25,7 @@ func TestMain(m *testing.M) {
 	os.Exit(code)
 }
 
-
+/*
 func TestCreateFinancialPeriodRange(t *testing.T) {
 
 	err := imiqashoserver.RemoveFinancialPeriodRange()
@@ -56,6 +56,8 @@ func TestReadFinancialPeriodRange(t *testing.T) {
 	t.Log(len(ps))
 }
 
+*/
+
 func TestGetDaysLeft(t *testing.T) {
 
 	start_date, err1 := now.Parse("2017-04-14")
@@ -67,7 +69,7 @@ func TestGetDaysLeft(t *testing.T) {
 	}
 	period := imiqashoserver.P{start_date}
 
-	days, err := period.GetDaysLeft()
+	days, all, err := period.GetDaysLeft()
 
 	if err != nil{
 
@@ -76,6 +78,31 @@ func TestGetDaysLeft(t *testing.T) {
 	}
 
 	t.Log("No of days left is ", days)
+	t.Log("Total days in month is ", all)
+}
+
+func TestGetProRataDays(t *testing.T) {
+
+	start_date, err1 := now.Parse("2017-04-14")
+
+	if err1 != nil{
+
+		t.Error("Failed to parse date : %v",err1)
+		return
+	}
+	period := imiqashoserver.P{start_date}
+
+	pr, err := period.GetProRataDays()
+
+	if err1 != nil{
+
+		t.Error("Failed to evaluate prorata days : %v",err)
+		return
+	}
+
+	t.Log("Pro rata is : ", pr)
+
+
 }
 
 func TestGetPeriod(t *testing.T) {

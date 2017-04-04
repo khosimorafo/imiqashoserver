@@ -9,6 +9,7 @@ import (
 	"gopkg.in/mgo.v2/bson"
 	"time"
 	"github.com/aodin/date"
+	"github.com/dariubs/percent"
 )
 
 type App struct {
@@ -99,26 +100,49 @@ type Period struct {
 	Month int	`json:"month,omitempty"`
 }
 
-func (p *P) GetDaysLeft() (int,error)  {
+func (p *P) GetProRataDays() (float64, error)  {
 
-	period, err := p.GetPeriod()
+	days, all, err := p.GetDaysLeft()
 
 	if err != nil {
 
 		return -1, err
 	}
 
+	perc := percent.PercentOf(days, all)
+
+	return perc, nil
+}
+
+func (p *P) GetDaysLeft() (int, int,error)  {
+
+	period, err := p.GetPeriod()
+
+	if err != nil {
+
+		return -1, -1, err
+	}
+
 	end, err1 := now.Parse(period.End)
 	if err1 != nil {
 
-		return -1, err
+		return -1, -1,  err
 	}
 
 	var no_of_days date.Range
 	no_of_days.Start = date.New(p.Date.Date())
 	no_of_days.End = date.New(end.Date())
 
-	return no_of_days.Days(), nil
+	start, err2 := now.Parse(period.Start)
+	if err2 != nil {
+
+		return -1, -1,  err2
+	}
+	var days_in_month date.Range
+	days_in_month.Start = date.New(start.Date())
+	days_in_month.End = date.New(end.Date())
+
+	return no_of_days.Days(), days_in_month.Days(), nil
 
 }
 
