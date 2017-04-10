@@ -169,7 +169,7 @@ func (p *P) GetPeriod () (Period, error) {
 	return Period{}, nil
 }
 
-func GetPeriod (name string) (Period, error) {
+func GetPeriodByName (name string) (Period, error) {
 
 	ps, err := ReadFinancialPeriodRange("open")
 
@@ -182,6 +182,27 @@ func GetPeriod (name string) (Period, error) {
 
 		//p_range := date.EntireMonth(period.Year, time.Month(period.Month))
 		if period.Name == name{
+
+			return period, nil
+		}
+	}
+
+	return Period{}, nil
+}
+
+func GetPeriodByIndex (index int) (Period, error) {
+
+	ps, err := ReadFinancialPeriodRange("open")
+
+	if err != nil {
+
+		return Period{}, err
+	}
+
+	for _, period := range ps {
+
+		//p_range := date.EntireMonth(period.Year, time.Month(period.Month))
+		if period.Index == index{
 
 			return period, nil
 		}

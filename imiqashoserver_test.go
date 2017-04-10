@@ -123,7 +123,21 @@ func TestGetPeriod(t *testing.T) {
 
 func TestGetPeriodByPeriodName(t *testing.T) {
 
-	p, err := imiqashoserver.GetPeriod("May-2017")
+	p, err := imiqashoserver.GetPeriodByName("May-2017")
+
+	if err != nil{
+
+		t.Error("Failed to get a period for the date given : ")
+		return
+	}
+
+	t.Log("Index is ", p.Index)
+	t.Log("Name is ", p.Name)
+}
+
+func TestGetPeriodByPeriodIndex(t *testing.T) {
+
+	p, err := imiqashoserver.GetPeriodByIndex(5)
 
 	if err != nil{
 
