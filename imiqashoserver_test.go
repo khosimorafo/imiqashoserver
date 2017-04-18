@@ -170,5 +170,4 @@ func TestRemoveFinancialPeriodRange(t *testing.T) {
 
 		t.Errorf("Failed to remove records. > %v", err)
 	}
-}
-*/
+}*/
