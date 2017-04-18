@@ -211,6 +211,34 @@ func GetPeriodByIndex (index int) (Period, error) {
 	return Period{}, nil
 }
 
+func GetNextPeriodByName (name string) (Period, error) {
+
+	ps, err := ReadFinancialPeriodRange("open")
+
+	if err != nil {
+
+		return Period{}, err
+	}
+
+	var isnext bool
+	isnext = false
+	for _, period := range ps {
+
+		if isnext {
+
+			return period, nil
+		}
+		//p_range := date.EntireMonth(period.Year, time.Month(period.Month))
+		if period.Name == name{
+
+			isnext = true
+		}
+	}
+
+	return Period{}, nil
+}
+
+
 func CreateFinancialPeriodRange (start_date string, no_of_months int) (error) {
 
 	collection := AppCollection().DB("feerlaroc").C("periods")

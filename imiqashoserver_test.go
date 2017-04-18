@@ -149,6 +149,20 @@ func TestGetPeriodByPeriodIndex(t *testing.T) {
 	t.Log("Name is ", p.Name)
 }
 
+func TestGetNextPeriodByPeriodName(t *testing.T) {
+
+	p, err := imiqashoserver.GetNextPeriodByName("May-2017")
+
+	if err != nil{
+
+		t.Error("Failed to get a period for the date given : ")
+		return
+	}
+
+	t.Log("Index is ", p.Index)
+	t.Log("Name is ", p.Name)
+}
+
 /*
 func TestRemoveFinancialPeriodRange(t *testing.T) {
 
