@@ -238,7 +238,6 @@ func GetNextPeriodByName (name string) (Period, error) {
 	return Period{}, nil
 }
 
-
 func CreateFinancialPeriodRange (start_date string, no_of_months int) (error) {
 
 	collection := AppCollection().DB("feerlaroc").C("periods")
@@ -255,8 +254,11 @@ func CreateFinancialPeriodRange (start_date string, no_of_months int) (error) {
 
 		current := now.New(t).AddDate(0, i, 0)
 
-		start := now.New(current).BeginningOfMonth().String()
-		end := now.New(current).EndOfMonth().String()
+		//t.Format(time.RFC3339)
+		//current := t.Format("2006-01-02")
+
+		start := now.New(current).BeginningOfMonth().Format("2006-01-02")
+		end := now.New(current).EndOfMonth().Format("2006-01-02")
 
 		month := now.New(current).Month()
 		year := now.New(current).Year()
