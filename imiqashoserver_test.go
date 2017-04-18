@@ -44,7 +44,6 @@ func TestCreateFinancialPeriodRange(t *testing.T) {
 	}
 }
 
-
 func TestReadFinancialPeriodRange(t *testing.T) {
 
 	ps, err := imiqashoserver.ReadFinancialPeriodRange("open")
