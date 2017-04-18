@@ -324,3 +324,12 @@ func CreateLatePaymentRequest(payment LatePayment) (string, error) {
 
 	return "", nil
 }
+
+func RemoveLatePaymentRequest() error {
+
+	collection := AppCollection().DB("feerlaroc").C("late_payments")
+
+	collection.RemoveAll(bson.M{})
+
+	return nil
+}
