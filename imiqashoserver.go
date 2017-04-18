@@ -100,6 +100,77 @@ type Period struct {
 	Month int	`json:"month,omitempty"`
 }
 
+type LatePayment struct {
+
+	CustomerName string 	`json:"customer_name,omitempty"`
+	CustomerID   string 	`json:"customer_id,omitempty"`
+	InvoiceID    string 	`json:"invoice_id,omitempty"`
+	Period 	     string 	`json:"period_name,omitempty"`
+	Status 	     string 	`json:"status,omitempty"`
+	Date         string 	`json:"report_date,omitempty"`
+	MustPayBy    string 	`json:"must_pay_by_date,omitempty"`
+}
+
+func CreateFinancialPeriodRange (start_date string, no_of_months int) (error) {
+
+	collection := AppCollection().DB("feerlaroc").C("periods")
+
+	t, err := now.Parse(start_date)
+
+	if err != nil {
+
+		log.Fatal("Date parsing error : ", err)
+		return err
+	}
+
+	for i := 0; i < no_of_months; i++ {
+
+		current := now.New(t).AddDate(0, i, 0)
+
+		//t.Format(time.RFC3339)
+		//current := t.Format("2006-01-02")
+
+		start := now.New(current).BeginningOfMonth().Format("2006-01-02")
+		end := now.New(current).EndOfMonth().Format("2006-01-02")
+
+		month := now.New(current).Month()
+		year := now.New(current).Year()
+
+		name := fmt.Sprintf("%s-%d", month, year)
+
+		period := Period{i, name, "open", start,end, year, int(month)}
+
+		collection.Insert(period)
+
+	}
+
+	return nil
+}
+
+func ReadFinancialPeriodRange (status string) ([]Period, error) {
+
+	collection := AppCollection().DB("feerlaroc").C("periods")
+
+	ps := []Period{}
+	err := collection.Find(bson.M{}).All(&ps)
+
+	if err != nil {
+
+		return nil, err
+	}
+
+	return ps, nil
+}
+
+func RemoveFinancialPeriodRange() error {
+
+	collection := AppCollection().DB("feerlaroc").C("periods")
+
+	collection.RemoveAll(bson.M{})
+
+	return nil
+}
+
 func (p *P) GetProRataDays() (float64, error)  {
 
 	days, all, err := p.GetDaysLeft()
@@ -238,62 +309,18 @@ func GetNextPeriodByName (name string) (Period, error) {
 	return Period{}, nil
 }
 
-func CreateFinancialPeriodRange (start_date string, no_of_months int) (error) {
+func CreateLatePaymentRequest(payment LatePayment) (string, error) {
 
-	collection := AppCollection().DB("feerlaroc").C("periods")
+	collection := AppCollection().DB("feerlaroc").C("late_payments")
 
-	t, err := now.Parse(start_date)
-
+	_, err := now.Parse(payment.Date)
 	if err != nil {
 
 		log.Fatal("Date parsing error : ", err)
-		return err
+		return "", err
 	}
 
-	for i := 0; i < no_of_months; i++ {
+	collection.Insert(payment)
 
-		current := now.New(t).AddDate(0, i, 0)
-
-		//t.Format(time.RFC3339)
-		//current := t.Format("2006-01-02")
-
-		start := now.New(current).BeginningOfMonth().Format("2006-01-02")
-		end := now.New(current).EndOfMonth().Format("2006-01-02")
-
-		month := now.New(current).Month()
-		year := now.New(current).Year()
-
-		name := fmt.Sprintf("%s-%d", month, year)
-
-		period := Period{i, name, "open", start,end, year, int(month)}
-
-		collection.Insert(period)
-
-	}
-
-	return nil
-}
-
-func ReadFinancialPeriodRange (status string) ([]Period, error) {
-
-	collection := AppCollection().DB("feerlaroc").C("periods")
-
-	ps := []Period{}
-	err := collection.Find(bson.M{}).All(&ps)
-
-	if err != nil {
-
-		return nil, err
-	}
-
-	return ps, nil
-}
-
-func RemoveFinancialPeriodRange() error {
-
-	collection := AppCollection().DB("feerlaroc").C("periods")
-
-	collection.RemoveAll(bson.M{})
-
-	return nil
+	return "", nil
 }
