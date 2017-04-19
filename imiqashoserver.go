@@ -10,6 +10,7 @@ import (
 	"time"
 	"github.com/aodin/date"
 	"github.com/dariubs/percent"
+	"github.com/pkg/errors"
 )
 
 type App struct {
@@ -49,18 +50,25 @@ type PeriodInterface interface {
 	ReadFinancialPeriodRange (status string) ([]Period, error)
 }
 
+type PaymentInterface interface {
+
+	RequestStatusAsPaid() (string, error)
+	RequestStatusAsApproved() (string, error)
+	RequestStatusAsRejected() (string, error)
+}
+
 type EntityInterface interface {
 
-	Create() (string, *EntityInterface, error)
+	Create() (string, error)
 	Read() (string, *EntityInterface, error)
-	Update() (string, *EntityInterface, error)
+	Update() (string, error)
 	Delete() (string, error)
 }
 
-func Create(i EntityInterface) (string, *EntityInterface, error) {
+func Create(i EntityInterface) (string, error) {
 
-	result, message, _ := i.Create()
-	return result, message, nil
+	result, _ := i.Create()
+	return result, nil
 }
 
 func Read(i EntityInterface) (string, *EntityInterface, error) {
@@ -69,10 +77,10 @@ func Read(i EntityInterface) (string, *EntityInterface, error) {
 	return result, message, nil
 }
 
-func Update(i EntityInterface) (string, *EntityInterface, error) {
+func Update(i EntityInterface) (string, error) {
 
-	result, message, _ := i.Update()
-	return result, message, nil
+	result, _ := i.Update()
+	return result, nil
 }
 
 func Delete(i EntityInterface) (string, error) {
@@ -102,13 +110,13 @@ type Period struct {
 
 type LatePayment struct {
 
-	CustomerName string 	`json:"customer_name,omitempty"`
-	CustomerID   string 	`json:"customer_id,omitempty"`
-	InvoiceID    string 	`json:"invoice_id,omitempty"`
-	Period 	     string 	`json:"period_name,omitempty"`
+	CustomerName string 	`json:"customername,omitempty"`
+	CustomerID   string 	`json:"customerid,omitempty"`
+	InvoiceID    string 	`json:"invoiceid,omitempty"`
+	Period 	     string 	`json:"periodname,omitempty"`
 	Status 	     string 	`json:"status,omitempty"`
-	Date         string 	`json:"report_date,omitempty"`
-	MustPayBy    string 	`json:"must_pay_by_date,omitempty"`
+	Date         string 	`json:"reportdate,omitempty"`
+	MustPayBy    string 	`json:"mustpaybydate,omitempty"`
 }
 
 func CreateFinancialPeriodRange (start_date string, no_of_months int) (error) {
@@ -309,7 +317,7 @@ func GetNextPeriodByName (name string) (Period, error) {
 	return Period{}, nil
 }
 
-func CreateLatePaymentRequest(payment LatePayment) (string, error) {
+func (payment LatePayment) Create() (string, error) {
 
 	collection := AppCollection().DB("feerlaroc").C("late_payments")
 
@@ -322,10 +330,131 @@ func CreateLatePaymentRequest(payment LatePayment) (string, error) {
 
 	collection.Insert(payment)
 
-	return "", nil
+	return "success", nil
 }
 
-func RemoveLatePaymentRequest() error {
+func (payment LatePayment) Read() (string, *EntityInterface, error){
+
+	collection := AppCollection().DB("feerlaroc").C("late_payments")
+
+	var lp LatePayment
+	err := collection.Find(bson.M{"invoiceid": payment.InvoiceID}).One(&lp)
+
+	if err != nil{
+		return "failure", nil, errors.New("Late payment request record not found.")
+	}
+
+	var p EntityInterface
+	p = lp
+
+	return "success", &p, nil
+}
+
+func (payment LatePayment) Update() (string, error){
+
+	collection := AppCollection().DB("feerlaroc").C("late_payments")
+
+	result, _, e := payment.Read()
+
+	if e != nil {
+
+		return result, e
+	}
+
+	err := collection.Remove(bson.M{"invoiceid": payment.InvoiceID})
+
+	if err != nil{
+		return "failure", errors.New("Failed to remove late payment request record.")
+	}
+
+	return "success", nil
+}
+
+func (payment LatePayment) Delete() (string, error){
+
+	collection := AppCollection().DB("feerlaroc").C("late_payments")
+
+	result, _, e := payment.Read()
+
+	if e != nil {
+
+		return result, e
+	}
+
+	err := collection.Remove(bson.M{"invoiceid": payment.InvoiceID})
+
+	if err != nil{
+		return "failure", errors.New("Failed to remove late payment request record.")
+	}
+
+	return "success", nil
+}
+
+func (payment LatePayment) RequestStatusAsApproved() (string, error){
+
+	//Check if payment request exists
+	result, _, e := payment.Read()
+	if e != nil {
+
+		return result, e
+	}
+
+	collection := AppCollection().DB("feerlaroc").C("late_payments")
+
+	collection.Update(bson.M{"invoiceid": payment.InvoiceID}, bson.M{"$set": bson.M{"status": "approved"}})
+
+	return "success", nil
+}
+
+func (payment LatePayment) RequestStatusAsExpired() (string, error){
+
+	//Check if payment request exists
+	result, _, e := payment.Read()
+	if e != nil {
+
+		return result, e
+	}
+
+	collection := AppCollection().DB("feerlaroc").C("late_payments")
+
+	collection.Update(bson.M{"invoiceid": payment.InvoiceID}, bson.M{"$set": bson.M{"status": "expired"}})
+
+	return "success", nil
+}
+
+func (payment LatePayment) RequestStatusAsPaid() (string, error){
+
+	//Check if payment request exists
+	result, _, e := payment.Read()
+	if e != nil {
+
+		return result, e
+	}
+
+	collection := AppCollection().DB("feerlaroc").C("late_payments")
+
+	collection.Update(bson.M{"invoiceid": payment.InvoiceID}, bson.M{"$set": bson.M{"status": "paid"}})
+
+	return "success", nil
+}
+
+func (payment LatePayment) RequestStatusAsRejected() (string, error){
+
+	//Check if payment request exists
+	result, _, e := payment.Read()
+	if e != nil {
+
+		return result, e
+	}
+
+	collection := AppCollection().DB("feerlaroc").C("late_payments")
+
+	collection.Update(bson.M{"invoiceid": payment.InvoiceID}, bson.M{"$set": bson.M{"status": "rejected"}})
+
+	return "success", nil
+}
+
+func RemoveLatePaymentRequests() error {
 
 	collection := AppCollection().DB("feerlaroc").C("late_payments")
 
