@@ -21,11 +21,18 @@
       <file leaf-file-name="imiqashoserver.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="390" column="1" lean-forward="true" selection-start-line="390" selection-start-column="1" selection-end-line="390" selection-end-column="1" />
+            <state relative-caret-position="152">
+              <caret line="464" column="0" lean-forward="true" selection-start-line="464" selection-start-column="0" selection-end-line="464" selection-end-column="0" />
               <folding>
                 <element signature="e#24#210#0" expanded="true" />
                 <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+                <element signature="e#725#873#0" expanded="false" />
+                <element signature="e#897#1036#0" expanded="false" />
+                <element signature="e#1059#1193#0" expanded="false" />
+                <element signature="n#!!block;n#Create#0" expanded="false" />
+                <element signature="n#!!block;n#Read#0" expanded="false" />
+                <element signature="n#!!block;n#Update#0" expanded="false" />
+                <element signature="n#!!block;n#Delete#0" expanded="false" />
                 <element signature="e#1708#1735#0" expanded="false" />
                 <element signature="e#1749#2034#0" expanded="false" />
                 <element signature="e#2053#2428#0" expanded="false" />
@@ -55,20 +62,21 @@
       <file leaf-file-name="imiqashoserver_test.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1004">
-              <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding>
-                <element signature="e#29#189#0" expanded="true" />
+                <element signature="e#29#97#0" expanded="true" />
                 <element signature="n#!!block;n#TestMain#0" expanded="false" />
-                <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
-                <element signature="n#!!block;n#TestGetDaysLeft#0" expanded="false" />
-                <element signature="n#!!block;n#TestGetProRataDays#0" expanded="false" />
-                <element signature="n#!!block;n#TestGetPeriod#0" expanded="false" />
-                <element signature="n#!!block;n#TestGetPeriodByPeriodName#0" expanded="false" />
-                <element signature="n#!!block;n#TestGetPeriodByPeriodIndex#0" expanded="false" />
-                <element signature="n#!!block;n#TestGetNextPeriodByPeriodName#0" expanded="false" />
-                <element signature="n#!!block;n#TestCreateandDeleteLatePaymentRequest#0" expanded="false" />
-                <element signature="e#4884#5065#0" expanded="false" />
+                <element signature="e#5054#5235#0" expanded="false" />
+                <marker date="1492671761094" expanded="false" signature="917:1068" ph="{...}" />
+                <marker date="1492671761094" expanded="false" signature="1105:1467" ph="{...}" />
+                <marker date="1492671761094" expanded="false" signature="1507:1825" ph="{...}" />
+                <marker date="1492671761094" expanded="false" signature="1860:2080" ph="{...}" />
+                <marker date="1492671761094" expanded="false" signature="2127:2330" ph="{...}" />
+                <marker date="1492671761094" expanded="false" signature="2378:2573" ph="{...}" />
+                <marker date="1492671761094" expanded="false" signature="2624:2831" ph="{...}" />
+                <marker date="1492671761094" expanded="false" signature="2890:3348" ph="{...}" />
+                <marker date="1492671761094" expanded="false" signature="3400:5048" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -190,7 +198,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19600308" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -199,7 +207,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43796712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40358743" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -231,6 +239,13 @@
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1749#2034#0" expanded="false" />
             <element signature="e#2053#2428#0" expanded="false" />
@@ -261,17 +276,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#29#189#0" expanded="true" />
+            <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetDaysLeft#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetProRataDays#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriod#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodIndex#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetNextPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestCreateandDeleteLatePaymentRequest#0" expanded="false" />
-            <element signature="e#4884#5065#0" expanded="false" />
+            <element signature="e#5054#5235#0" expanded="false" />
+            <marker date="1492671761094" expanded="false" signature="917:1068" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1105:1467" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1507:1825" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1860:2080" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2127:2330" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2378:2573" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2624:2831" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2890:3348" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="3400:5048" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -283,6 +299,13 @@
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1749#2034#0" expanded="false" />
             <element signature="e#2053#2428#0" expanded="false" />
@@ -313,17 +336,18 @@
         <state relative-caret-position="1980">
           <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
           <folding>
-            <element signature="e#29#189#0" expanded="true" />
+            <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetDaysLeft#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetProRataDays#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriod#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodIndex#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetNextPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestCreateandDeleteLatePaymentRequest#0" expanded="false" />
-            <element signature="e#4884#5065#0" expanded="false" />
+            <element signature="e#5054#5235#0" expanded="false" />
+            <marker date="1492671761094" expanded="false" signature="917:1068" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1105:1467" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1507:1825" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1860:2080" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2127:2330" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2378:2573" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2624:2831" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2890:3348" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="3400:5048" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -335,6 +359,13 @@
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1749#2034#0" expanded="false" />
             <element signature="e#2053#2428#0" expanded="false" />
@@ -365,17 +396,18 @@
         <state relative-caret-position="1980">
           <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
           <folding>
-            <element signature="e#29#189#0" expanded="true" />
+            <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetDaysLeft#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetProRataDays#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriod#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodIndex#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetNextPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestCreateandDeleteLatePaymentRequest#0" expanded="false" />
-            <element signature="e#4884#5065#0" expanded="false" />
+            <element signature="e#5054#5235#0" expanded="false" />
+            <marker date="1492671761094" expanded="false" signature="917:1068" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1105:1467" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1507:1825" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1860:2080" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2127:2330" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2378:2573" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2624:2831" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2890:3348" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="3400:5048" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -387,6 +419,13 @@
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1749#2034#0" expanded="false" />
             <element signature="e#2053#2428#0" expanded="false" />
@@ -417,17 +456,18 @@
         <state relative-caret-position="1980">
           <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
           <folding>
-            <element signature="e#29#189#0" expanded="true" />
+            <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetDaysLeft#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetProRataDays#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriod#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodIndex#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetNextPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestCreateandDeleteLatePaymentRequest#0" expanded="false" />
-            <element signature="e#4884#5065#0" expanded="false" />
+            <element signature="e#5054#5235#0" expanded="false" />
+            <marker date="1492671761094" expanded="false" signature="917:1068" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1105:1467" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1507:1825" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1860:2080" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2127:2330" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2378:2573" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2624:2831" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2890:3348" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="3400:5048" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -439,6 +479,13 @@
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1749#2034#0" expanded="false" />
             <element signature="e#2053#2428#0" expanded="false" />
@@ -469,17 +516,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#29#189#0" expanded="true" />
+            <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetDaysLeft#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetProRataDays#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriod#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodIndex#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetNextPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestCreateandDeleteLatePaymentRequest#0" expanded="false" />
-            <element signature="e#4884#5065#0" expanded="false" />
+            <element signature="e#5054#5235#0" expanded="false" />
+            <marker date="1492671761094" expanded="false" signature="917:1068" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1105:1467" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1507:1825" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1860:2080" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2127:2330" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2378:2573" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2624:2831" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2890:3348" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="3400:5048" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -491,6 +539,13 @@
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1749#2034#0" expanded="false" />
             <element signature="e#2053#2428#0" expanded="false" />
@@ -521,17 +576,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#29#189#0" expanded="true" />
+            <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetDaysLeft#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetProRataDays#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriod#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodIndex#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetNextPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestCreateandDeleteLatePaymentRequest#0" expanded="false" />
-            <element signature="e#4884#5065#0" expanded="false" />
+            <element signature="e#5054#5235#0" expanded="false" />
+            <marker date="1492671761094" expanded="false" signature="917:1068" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1105:1467" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1507:1825" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1860:2080" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2127:2330" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2378:2573" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2624:2831" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2890:3348" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="3400:5048" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -543,6 +599,13 @@
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1749#2034#0" expanded="false" />
             <element signature="e#2053#2428#0" expanded="false" />
@@ -573,17 +636,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#29#189#0" expanded="true" />
+            <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetDaysLeft#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetProRataDays#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriod#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodIndex#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetNextPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestCreateandDeleteLatePaymentRequest#0" expanded="false" />
-            <element signature="e#4884#5065#0" expanded="false" />
+            <element signature="e#5054#5235#0" expanded="false" />
+            <marker date="1492671761094" expanded="false" signature="917:1068" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1105:1467" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1507:1825" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1860:2080" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2127:2330" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2378:2573" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2624:2831" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2890:3348" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="3400:5048" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -595,6 +659,13 @@
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1749#2034#0" expanded="false" />
             <element signature="e#2053#2428#0" expanded="false" />
@@ -625,48 +696,57 @@
         <state relative-caret-position="1050">
           <caret line="75" column="52" lean-forward="false" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
           <folding>
-            <element signature="e#29#189#0" expanded="true" />
+            <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetDaysLeft#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetProRataDays#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriod#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodIndex#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetNextPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestCreateandDeleteLatePaymentRequest#0" expanded="false" />
-            <element signature="e#4884#5065#0" expanded="false" />
+            <element signature="e#5054#5235#0" expanded="false" />
+            <marker date="1492671761094" expanded="false" signature="917:1068" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1105:1467" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1507:1825" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1860:2080" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2127:2330" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2378:2573" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2624:2831" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2890:3348" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="3400:5048" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1004">
-          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding>
-            <element signature="e#29#189#0" expanded="true" />
+            <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetDaysLeft#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetProRataDays#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriod#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetPeriodByPeriodIndex#0" expanded="false" />
-            <element signature="n#!!block;n#TestGetNextPeriodByPeriodName#0" expanded="false" />
-            <element signature="n#!!block;n#TestCreateandDeleteLatePaymentRequest#0" expanded="false" />
-            <element signature="e#4884#5065#0" expanded="false" />
+            <element signature="e#5054#5235#0" expanded="false" />
+            <marker date="1492671761094" expanded="false" signature="917:1068" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1105:1467" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1507:1825" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="1860:2080" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2127:2330" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2378:2573" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2624:2831" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="2890:3348" ph="{...}" />
+            <marker date="1492671761094" expanded="false" signature="3400:5048" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="390" column="1" lean-forward="true" selection-start-line="390" selection-start-column="1" selection-end-line="390" selection-end-column="1" />
+        <state relative-caret-position="152">
+          <caret line="464" column="0" lean-forward="true" selection-start-line="464" selection-start-column="0" selection-end-line="464" selection-end-column="0" />
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1749#2034#0" expanded="false" />
             <element signature="e#2053#2428#0" expanded="false" />

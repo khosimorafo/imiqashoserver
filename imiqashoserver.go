@@ -454,6 +454,26 @@ func (payment LatePayment) RequestStatusAsRejected() (string, error){
 	return "success", nil
 }
 
+//Utilities
+func DateFormatter(date string) (string, time.Time, error)  {
+
+	layout := "2006-01-02"
+
+	//fmt.Printf("Move in date : %v",tenant.MoveInDate)
+	//ti := "2017-04-12"
+	t, err := time.Parse(layout, date)
+
+	ret_t := t.Format("2006-01-02")
+
+	if err != nil {
+		fmt.Println(err)
+		return "", t, errors.New("Date submitted is invalid. ")
+	}
+
+
+	return ret_t, t, nil
+}
+
 func RemoveLatePaymentRequests() error {
 
 	collection := AppCollection().DB("feerlaroc").C("late_payments")

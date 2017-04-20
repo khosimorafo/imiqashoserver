@@ -4,11 +4,6 @@ import (
 	"testing"
 	"os"
 	"github.com/khosimorafo/imiqashoserver"
-	"time"
-	"fmt"
-	"encoding/json"
-	"github.com/antonholmquist/jason"
-	"github.com/jinzhu/now"
 )
 
 var a imiqashoserver.App
@@ -46,6 +41,22 @@ func TestCreateFinancialPeriodRange(t *testing.T) {
 	}
 }
 */
+
+func TestDateFormatter(t *testing.T) {
+
+	t_str, t1, err := imiqashoserver.DateFormatter("2017-04-23")
+
+	if err !=nil {
+
+		t.Error("Failed to format date ", err)
+		return
+	}
+
+	t.Log("Full date is : ", t1.String())
+	t.Log("Formatted date is : ", t_str)
+}
+
+/*
 func TestReadFinancialPeriodRange(t *testing.T) {
 
 	ps, err := imiqashoserver.ReadFinancialPeriodRange("open")
@@ -286,6 +297,8 @@ func TestChangePaymentRequestStatus(t *testing.T) {
 		return
 	}
 }
+
+*/
 
 /*
 func TestRemoveFinancialPeriodRange(t *testing.T) {
