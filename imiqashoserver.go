@@ -470,7 +470,7 @@ func (payment LatePayment) RequestStatusAsVoided() (string, error){
 	return "success", nil
 }
 
-func GetLatePaymentRequests(period_name string)([]LatePayment, error){
+func GetLatePaymentRequests(period_name string)(*[]LatePayment, error){
 
 	collection := AppCollection().DB("feerlaroc").C("late_payments")
 
@@ -488,7 +488,7 @@ func GetLatePaymentRequests(period_name string)([]LatePayment, error){
 		return nil, err
 	}
 
-	return requests, nil
+	return &requests, nil
 }
 
 //Utilities
