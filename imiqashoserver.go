@@ -454,16 +454,31 @@ func (payment LatePayment) RequestStatusAsRejected() (string, error){
 	return "success", nil
 }
 
+func (payment LatePayment) RequestStatusAsVoided() (string, error){
+
+	//Check if payment request exists
+	result, _, e := payment.Read()
+	if e != nil {
+
+		return result, e
+	}
+
+	collection := AppCollection().DB("feerlaroc").C("late_payments")
+
+	collection.Update(bson.M{"invoiceid": payment.InvoiceID}, bson.M{"$set": bson.M{"status": "void"}})
+
+	return "success", nil
+}
+
+
 //Utilities
 func DateFormatter(date string) (string, time.Time, error)  {
 
 	layout := "2006-01-02"
 
-	//fmt.Printf("Move in date : %v",tenant.MoveInDate)
-	//ti := "2017-04-12"
 	t, err := time.Parse(layout, date)
 
-	ret_t := t.Format("2006-01-02")
+	ret_t := t.Format(layout)
 
 	if err != nil {
 		fmt.Println(err)
