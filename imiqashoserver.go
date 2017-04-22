@@ -470,6 +470,26 @@ func (payment LatePayment) RequestStatusAsVoided() (string, error){
 	return "success", nil
 }
 
+func GetLatePaymentRequests(period_name string)([]LatePayment, error){
+
+	collection := AppCollection().DB("feerlaroc").C("late_payments")
+
+	_, error := GetNextPeriodByName(period_name)
+	if error != nil {
+
+		return nil, errors.New("Failed to validate submitted period_name. ")
+	}
+
+	requests := []LatePayment{}
+	err := collection.Find(bson.M{"period": period_name}).All(&requests)
+
+	if err != nil {
+
+		return nil, err
+	}
+
+	return requests, nil
+}
 
 //Utilities
 func DateFormatter(date string) (string, time.Time, error)  {

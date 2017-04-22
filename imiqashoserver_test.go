@@ -4,6 +4,8 @@ import (
 	"testing"
 	"os"
 	"github.com/khosimorafo/imiqashoserver"
+	"time"
+	"fmt"
 )
 
 var a imiqashoserver.App
@@ -40,7 +42,6 @@ func TestCreateFinancialPeriodRange(t *testing.T) {
 		return
 	}
 }
-*/
 
 func TestDateFormatter(t *testing.T) {
 
@@ -54,6 +55,44 @@ func TestDateFormatter(t *testing.T) {
 
 	t.Log("Full date is : ", t1.String())
 	t.Log("Formatted date is : ", t_str)
+}
+*/
+
+func TestGetLatePaymentRequests(t *testing.T) {
+
+	var pay imiqashoserver.LatePayment
+	layout := "2006-01-02"
+
+	t1 := time.Now()
+	fmt.Println(t1.Format(layout))
+	pay.CustomerID = "2343253532"
+	pay.InvoiceID = "2343253532"
+	pay.Date = t1.Format(layout)
+	pay.Period = "May-2017"
+	pay.Status = "approved"
+
+	_, err := pay.Create()
+	if err != nil{
+
+		t.Error("Failed to make payment extention request!")
+		return
+	}
+
+	requests, err := imiqashoserver.GetLatePaymentRequests(pay.Period)
+
+	if len(requests) < 1 {
+
+		t.Errorf("Expected a request. Got none. ")
+	}
+
+	//Delete
+	_, err_del := pay.Delete()
+
+	if err_del != nil{
+
+		t.Error(err_del)
+		return
+	}
 }
 
 /*
