@@ -294,13 +294,17 @@ func (period Period) GetPeriodDiscountDate() (time.Time, bool)  {
 
 	_, p_start_t, _ := DateFormatter(period.Start)
 
+	//Create a stub(holder) date that navigates to the previous month.
 	d := time.Duration(-int(p_start_t.Day())-5) * 24 * time.Hour
 	stub_date := p_start_t.Add(d)
 
+	//Go to the beginning of the previous month and add 25 day. The result is the cut-off date/time.
 	d_date := now.New(stub_date).BeginningOfMonth().AddDate(0,0,25)
 
+	//Use cut-off date/time to create a before range
 	beforeCutoff := date.Range{End: date.New(d_date.Year(), d_date.Month(), d_date.Day())}
 
+	//Test against today. Assumes that today's date/time is the actual test date.
 	today := date.FromTime(time.Now())
 	if (today.Within(beforeCutoff)){
 
