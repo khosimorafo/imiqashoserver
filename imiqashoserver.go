@@ -290,6 +290,26 @@ func GetPeriodByIndex (index int) (Period, error) {
 	return Period{}, nil
 }
 
+func (period Period) GetPeriodDiscountDate() (time.Time, bool)  {
+
+	_, p_start_t, _ := DateFormatter(period.Start)
+
+	d := time.Duration(-int(p_start_t.Day())-5) * 24 * time.Hour
+	stub_date := p_start_t.Add(d)
+
+	d_date := now.New(stub_date).BeginningOfMonth().AddDate(0,0,25)
+
+	beforeCutoff := date.Range{End: date.New(d_date.Year(), d_date.Month(), d_date.Day())}
+
+	today := date.FromTime(time.Now())
+	if (today.Within(beforeCutoff)){
+
+		return d_date, true
+	}
+
+	return d_date, false
+}
+
 func GetNextPeriodByName (name string) (Period, error) {
 
 	ps, err := ReadFinancialPeriodRange("open")

@@ -4,8 +4,7 @@ import (
 	"testing"
 	"os"
 	"github.com/khosimorafo/imiqashoserver"
-	"time"
-	"fmt"
+
 )
 
 var a imiqashoserver.App
@@ -56,7 +55,6 @@ func TestDateFormatter(t *testing.T) {
 	t.Log("Full date is : ", t1.String())
 	t.Log("Formatted date is : ", t_str)
 }
-*/
 
 func TestGetLatePaymentRequests(t *testing.T) {
 
@@ -94,6 +92,7 @@ func TestGetLatePaymentRequests(t *testing.T) {
 		return
 	}
 }
+*/
 
 /*
 func TestReadFinancialPeriodRange(t *testing.T) {
@@ -348,3 +347,19 @@ func TestRemoveFinancialPeriodRange(t *testing.T) {
 		t.Errorf("Failed to remove records. > %v", err)
 	}
 }*/
+
+func TestPeriod_GetPeriodDiscountDate(t *testing.T) {
+
+	p, err := imiqashoserver.GetPeriodByName("April-2017")
+
+	if err != nil{
+
+		t.Error("Failed to get a period for the date given : ")
+		return
+	}
+
+	t_str, can_discount := p.GetPeriodDiscountDate()
+
+	t.Log("Discount end date is : ", t_str)
+	t.Log("Can discount : ", can_discount)
+}
