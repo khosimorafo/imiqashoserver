@@ -350,7 +350,7 @@ func TestRemoveFinancialPeriodRange(t *testing.T) {
 
 func TestPeriod_GetPeriodDiscountDate(t *testing.T) {
 
-	p, err := imiqashoserver.GetPeriodByName("April-2017")
+	p, err := imiqashoserver.GetPeriodByName("May-2017")
 
 	if err != nil{
 

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d840c3cb-b204-434f-bc5a-0fb7f449551b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imiqashoserver.go" afterPath="$PROJECT_DIR$/imiqashoserver.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imiqashoserver_test.go" afterPath="$PROJECT_DIR$/imiqashoserver_test.go" />
-    </list>
+    <list default="true" id="d840c3cb-b204-434f-bc5a-0fb7f449551b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="imiqashoserver.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="imiqashoserver.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="303" column="12" lean-forward="false" selection-start-line="303" selection-start-column="12" selection-end-line="303" selection-end-column="12" />
+            <state relative-caret-position="152">
+              <caret line="292" column="64" lean-forward="false" selection-start-line="292" selection-start-column="64" selection-end-line="292" selection-end-column="64" />
               <folding>
                 <element signature="e#24#210#0" expanded="true" />
                 <element signature="n#!!block;n#AppCollection#0" expanded="false" />
@@ -43,6 +40,7 @@
                 <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
                 <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
                 <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+                <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
                 <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
                 <element signature="n#!!block;n#Create#1" expanded="false" />
                 <element signature="n#!!block;n#Read#1" expanded="false" />
@@ -60,23 +58,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="imiqashoserver_test.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="imiqashoserver_test.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="356" column="46" lean-forward="true" selection-start-line="356" selection-start-column="46" selection-end-line="356" selection-end-column="46" />
+            <state relative-caret-position="273">
+              <caret line="358" column="9" lean-forward="true" selection-start-line="358" selection-start-column="9" selection-end-line="358" selection-end-column="9" />
               <folding>
                 <element signature="e#29#98#0" expanded="true" />
                 <element signature="n#!!block;n#TestMain#0" expanded="false" />
                 <element signature="e#278#1513#0" expanded="false" />
                 <element signature="e#1515#5701#0" expanded="false" />
                 <element signature="e#5703#5884#0" expanded="false" />
-                <marker date="1492929777470" expanded="false" signature="1566:1717" ph="{...}" />
-                <marker date="1492929777470" expanded="false" signature="1754:2116" ph="{...}" />
-                <marker date="1492929777470" expanded="false" signature="2156:2474" ph="{...}" />
-                <marker date="1492929777470" expanded="false" signature="3027:3222" ph="{...}" />
-                <marker date="1492929777470" expanded="false" signature="3273:3480" ph="{...}" />
-                <marker date="1492929777470" expanded="false" signature="4049:5697" ph="{...}" />
+                <marker date="1492931762876" expanded="false" signature="1566:1717" ph="{...}" />
+                <marker date="1492931762876" expanded="false" signature="1754:2116" ph="{...}" />
+                <marker date="1492931762876" expanded="false" signature="2156:2474" ph="{...}" />
+                <marker date="1492931762876" expanded="false" signature="3027:3222" ph="{...}" />
+                <marker date="1492931762876" expanded="false" signature="3273:3480" ph="{...}" />
+                <marker date="1492931762876" expanded="false" signature="4049:5697" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -256,6 +254,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
             <element signature="n#!!block;n#Read#1" expanded="false" />
@@ -282,12 +281,12 @@
             <element signature="e#278#1513#0" expanded="false" />
             <element signature="e#1515#5701#0" expanded="false" />
             <element signature="e#5703#5884#0" expanded="false" />
-            <marker date="1492929777470" expanded="false" signature="1566:1717" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="1754:2116" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="2156:2474" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3027:3222" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3273:3480" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="4049:5697" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1566:1717" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1754:2116" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="2156:2474" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3027:3222" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3273:3480" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="4049:5697" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -316,6 +315,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
             <element signature="n#!!block;n#Read#1" expanded="false" />
@@ -342,12 +342,12 @@
             <element signature="e#278#1513#0" expanded="false" />
             <element signature="e#1515#5701#0" expanded="false" />
             <element signature="e#5703#5884#0" expanded="false" />
-            <marker date="1492929777470" expanded="false" signature="1566:1717" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="1754:2116" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="2156:2474" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3027:3222" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3273:3480" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="4049:5697" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1566:1717" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1754:2116" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="2156:2474" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3027:3222" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3273:3480" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="4049:5697" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -376,6 +376,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
             <element signature="n#!!block;n#Read#1" expanded="false" />
@@ -402,12 +403,12 @@
             <element signature="e#278#1513#0" expanded="false" />
             <element signature="e#1515#5701#0" expanded="false" />
             <element signature="e#5703#5884#0" expanded="false" />
-            <marker date="1492929777470" expanded="false" signature="1566:1717" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="1754:2116" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="2156:2474" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3027:3222" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3273:3480" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="4049:5697" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1566:1717" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1754:2116" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="2156:2474" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3027:3222" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3273:3480" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="4049:5697" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -436,6 +437,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
             <element signature="n#!!block;n#Read#1" expanded="false" />
@@ -462,12 +464,12 @@
             <element signature="e#278#1513#0" expanded="false" />
             <element signature="e#1515#5701#0" expanded="false" />
             <element signature="e#5703#5884#0" expanded="false" />
-            <marker date="1492929777470" expanded="false" signature="1566:1717" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="1754:2116" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="2156:2474" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3027:3222" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3273:3480" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="4049:5697" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1566:1717" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1754:2116" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="2156:2474" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3027:3222" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3273:3480" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="4049:5697" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -496,6 +498,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
             <element signature="n#!!block;n#Read#1" expanded="false" />
@@ -522,12 +525,12 @@
             <element signature="e#278#1513#0" expanded="false" />
             <element signature="e#1515#5701#0" expanded="false" />
             <element signature="e#5703#5884#0" expanded="false" />
-            <marker date="1492929777470" expanded="false" signature="1566:1717" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="1754:2116" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="2156:2474" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3027:3222" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3273:3480" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="4049:5697" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1566:1717" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1754:2116" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="2156:2474" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3027:3222" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3273:3480" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="4049:5697" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -556,6 +559,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
             <element signature="n#!!block;n#Read#1" expanded="false" />
@@ -582,12 +586,12 @@
             <element signature="e#278#1513#0" expanded="false" />
             <element signature="e#1515#5701#0" expanded="false" />
             <element signature="e#5703#5884#0" expanded="false" />
-            <marker date="1492929777470" expanded="false" signature="1566:1717" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="1754:2116" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="2156:2474" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3027:3222" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3273:3480" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="4049:5697" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1566:1717" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1754:2116" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="2156:2474" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3027:3222" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3273:3480" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="4049:5697" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -616,6 +620,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
             <element signature="n#!!block;n#Read#1" expanded="false" />
@@ -642,12 +647,12 @@
             <element signature="e#278#1513#0" expanded="false" />
             <element signature="e#1515#5701#0" expanded="false" />
             <element signature="e#5703#5884#0" expanded="false" />
-            <marker date="1492929777470" expanded="false" signature="1566:1717" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="1754:2116" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="2156:2474" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3027:3222" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3273:3480" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="4049:5697" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1566:1717" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1754:2116" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="2156:2474" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3027:3222" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3273:3480" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="4049:5697" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -676,6 +681,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
             <element signature="n#!!block;n#Read#1" expanded="false" />
@@ -702,40 +708,20 @@
             <element signature="e#278#1513#0" expanded="false" />
             <element signature="e#1515#5701#0" expanded="false" />
             <element signature="e#5703#5884#0" expanded="false" />
-            <marker date="1492929777470" expanded="false" signature="1566:1717" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="1754:2116" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="2156:2474" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3027:3222" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3273:3480" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="4049:5697" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="356" column="46" lean-forward="true" selection-start-line="356" selection-start-column="46" selection-end-line="356" selection-end-column="46" />
-          <folding>
-            <element signature="e#29#98#0" expanded="true" />
-            <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <element signature="e#278#1513#0" expanded="false" />
-            <element signature="e#1515#5701#0" expanded="false" />
-            <element signature="e#5703#5884#0" expanded="false" />
-            <marker date="1492929777470" expanded="false" signature="1566:1717" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="1754:2116" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="2156:2474" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3027:3222" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="3273:3480" ph="{...}" />
-            <marker date="1492929777470" expanded="false" signature="4049:5697" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1566:1717" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1754:2116" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="2156:2474" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3027:3222" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3273:3480" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="4049:5697" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="303" column="12" lean-forward="false" selection-start-line="303" selection-start-column="12" selection-end-line="303" selection-end-column="12" />
+        <state relative-caret-position="152">
+          <caret line="292" column="64" lean-forward="false" selection-start-line="292" selection-start-column="64" selection-end-line="292" selection-end-column="64" />
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
@@ -756,6 +742,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
             <element signature="n#!!block;n#Read#1" expanded="false" />
@@ -768,6 +755,26 @@
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#RemoveLatePaymentRequests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="358" column="9" lean-forward="true" selection-start-line="358" selection-start-column="9" selection-end-line="358" selection-end-column="9" />
+          <folding>
+            <element signature="e#29#98#0" expanded="true" />
+            <element signature="n#!!block;n#TestMain#0" expanded="false" />
+            <element signature="e#278#1513#0" expanded="false" />
+            <element signature="e#1515#5701#0" expanded="false" />
+            <element signature="e#5703#5884#0" expanded="false" />
+            <marker date="1492931762876" expanded="false" signature="1566:1717" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="1754:2116" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="2156:2474" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3027:3222" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="3273:3480" ph="{...}" />
+            <marker date="1492931762876" expanded="false" signature="4049:5697" ph="{...}" />
           </folding>
         </state>
       </provider>
