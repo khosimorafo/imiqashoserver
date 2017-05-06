@@ -4,7 +4,6 @@ import (
 	"testing"
 	"os"
 	"github.com/khosimorafo/imiqashoserver"
-
 )
 
 var a imiqashoserver.App
@@ -351,6 +350,41 @@ func TestGetLatestPeriod(t *testing.T) {
 	t.Log("Index is ", p.Index)
 	t.Log("Name is ", p.Name)
 }
+
+func TestGetPeriodRange(t *testing.T) {
+
+	periods, err := imiqashoserver.GetSequentialPeriodRange("January-2017", "June-2017")
+
+	if err != nil{
+
+		t.Error("Failed to get a period for the date given : ")
+		return
+	}
+
+	for _, period := range periods{
+
+		t.Log("Index is ", period.Index)
+		t.Log("Name is ", period.Name)
+	}
+}
+
+func TestGetSequentialPeriodRangeAfterToCurrent(t *testing.T) {
+
+	periods, err := imiqashoserver.GetSequentialPeriodRangeAfterToCurrent("January-2017")
+
+	if err != nil{
+
+		t.Error("Failed to get a period for the date given : ")
+		return
+	}
+
+	for _, period := range periods{
+
+		t.Log("Index is ", period.Index)
+		t.Log("Name is ", period.Name)
+	}
+}
+
 
 /*
 func TestRemoveFinancialPeriodRange(t *testing.T) {

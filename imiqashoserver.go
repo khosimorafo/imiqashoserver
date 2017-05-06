@@ -315,6 +315,53 @@ func GetLatestPeriod() (Period, error){
 	return Period{}, nil
 }
 
+func GetSequentialPeriodRange(start string, end string) ([]Period, error){
+
+	ps, err := ReadFinancialPeriodRange("open")
+
+	p, err := GetPeriodByName(start)
+	p_latest,err := GetPeriodByName(end)
+
+
+	if err != nil {
+
+		return []Period{}, err
+	}
+
+	periods := make([]Period, 0)
+	for _, period := range ps {
+
+		if (period.Index >= p.Index) && (period.Index <= p_latest.Index) {
+
+			periods = append(periods, period)
+		}
+	}
+	return periods, nil
+}
+
+func GetSequentialPeriodRangeAfterToCurrent(start string) ([]Period, error){
+
+	ps, err := ReadFinancialPeriodRange("open")
+
+	p, err := GetPeriodByName(start)
+	p_latest,err := GetLatestPeriod()
+
+
+	if err != nil {
+
+		return []Period{}, err
+	}
+
+	periods := make([]Period, 0)
+	for _, period := range ps {
+
+		if (period.Index > p.Index) && (period.Index <= p_latest.Index) {
+
+			periods = append(periods, period)
+		}
+	}
+	return periods, nil
+}
 
 func (period Period) GetPeriodDiscountDate() (time.Time, bool)  {
 
