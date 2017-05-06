@@ -338,6 +338,20 @@ func TestChangePaymentRequestStatus(t *testing.T) {
 
 */
 
+func TestGetLatestPeriod(t *testing.T) {
+
+	p, err := imiqashoserver.GetLatestPeriod()
+
+	if err != nil{
+
+		t.Error("Failed to get a period for the date given : ")
+		return
+	}
+
+	t.Log("Index is ", p.Index)
+	t.Log("Name is ", p.Name)
+}
+
 /*
 func TestRemoveFinancialPeriodRange(t *testing.T) {
 
@@ -346,7 +360,7 @@ func TestRemoveFinancialPeriodRange(t *testing.T) {
 
 		t.Errorf("Failed to remove records. > %v", err)
 	}
-}*/
+}
 
 func TestPeriod_GetPeriodDiscountDate(t *testing.T) {
 
@@ -363,3 +377,4 @@ func TestPeriod_GetPeriodDiscountDate(t *testing.T) {
 	t.Log("Discount end date is : ", t_str)
 	t.Log("Can discount : ", can_discount)
 }
+*/

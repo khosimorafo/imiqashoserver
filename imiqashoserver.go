@@ -290,6 +290,32 @@ func GetPeriodByIndex (index int) (Period, error) {
 	return Period{}, nil
 }
 
+func GetLatestPeriod() (Period, error){
+
+	//current_date, _, _ := DateFormatter(time.Now().UTC().String())
+
+	actual_date := date.New(time.Now().UTC().Date())
+
+	ps, err := ReadFinancialPeriodRange("open")
+
+	if err != nil {
+
+		return Period{}, err
+	}
+
+	for _, period := range ps {
+
+		p_range := date.EntireMonth(period.Year, time.Month(period.Month))
+		if actual_date.Within(p_range){
+
+			return period, nil
+		}
+	}
+
+	return Period{}, nil
+}
+
+
 func (period Period) GetPeriodDiscountDate() (time.Time, bool)  {
 
 	_, p_start_t, _ := DateFormatter(period.Start)
