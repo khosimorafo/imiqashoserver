@@ -337,6 +337,7 @@ func TestChangePaymentRequestStatus(t *testing.T) {
 
 */
 
+/*
 func TestGetLatestPeriod(t *testing.T) {
 
 	p, err := imiqashoserver.GetLatestPeriod()
@@ -385,8 +386,6 @@ func TestGetSequentialPeriodRangeAfterToCurrent(t *testing.T) {
 	}
 }
 
-
-/*
 func TestRemoveFinancialPeriodRange(t *testing.T) {
 
 	err := imiqashoserver.RemoveFinancialPeriodRange()
@@ -411,4 +410,36 @@ func TestPeriod_GetPeriodDiscountDate(t *testing.T) {
 	t.Log("Discount end date is : ", t_str)
 	t.Log("Can discount : ", can_discount)
 }
+
+func TestCreateHttpConfig(t *testing.T) {
+
+	var config imiqashoserver.HttpConfig
+
+	config.Type = "printer"
+	config.Name = "shop-printer"
+	config.Location = "http://192.168.8.101:8080"
+	config.Port = "8080"
+	config.Status = "active"
+
+	config.CreateHttpConfig()
+}
+
 */
+func TestGetHttpConfig(t *testing.T) {
+
+	configs, err := imiqashoserver.ReadHttpConfig()
+
+	if err != nil{
+
+		t.Error("Failed to get config data. ")
+		return
+	}
+
+	for _, config := range configs{
+
+		t.Log("Port is ", config.Port)
+		t.Log("Name is ", config.Name)
+		t.Log("Type is ", config.Type)
+		t.Log("Location is ", config.Location)
+	}
+}

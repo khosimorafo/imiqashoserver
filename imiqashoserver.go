@@ -96,6 +96,15 @@ type P struct {
 	Date time.Time
 }
 
+type HttpConfig struct {
+
+	Type string 	`json:"type,omitempty"`
+	Name string 	`json:"name,omitempty"`
+	Location string `json:"location,omitempty"`
+	Port string 	`json:"port,omitempty"`
+	Status string 	`json:"status,omitempty"`
+}
+
 type Period struct {
 
 	Index int 	`json:"index,omitempty"`
@@ -170,6 +179,28 @@ func ReadFinancialPeriodRange (status string) ([]Period, error) {
 	return ps, nil
 }
 
+func (config *HttpConfig) CreateHttpConfig () (error) {
+
+	collection := AppCollection().DB("feerlaroc").C("http")
+
+	return collection.Insert(config)
+}
+
+func ReadHttpConfig () ([]HttpConfig, error) {
+
+	collection := AppCollection().DB("feerlaroc").C("http")
+
+	hc := []HttpConfig{}
+	err := collection.Find(bson.M{}).All(&hc)
+
+	if err != nil {
+
+		return nil, err
+	}
+
+	return hc, nil
+}
+
 func RemoveFinancialPeriodRange() error {
 
 	collection := AppCollection().DB("feerlaroc").C("periods")
@@ -177,6 +208,11 @@ func RemoveFinancialPeriodRange() error {
 	collection.RemoveAll(bson.M{})
 
 	return nil
+}
+
+func (config *HttpConfig) GetHttpConfigurations() ([]HttpConfig, error)  {
+
+	return ReadHttpConfig()
 }
 
 func (p *P) GetProRataDays() (float64, error)  {
