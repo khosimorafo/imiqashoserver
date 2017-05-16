@@ -410,24 +410,24 @@ func TestPeriod_GetPeriodDiscountDate(t *testing.T) {
 	t.Log("Discount end date is : ", t_str)
 	t.Log("Can discount : ", can_discount)
 }
+*/
+func TestCreateAppConfig(t *testing.T) {
 
-func TestCreateHttpConfig(t *testing.T) {
-
-	var config imiqashoserver.HttpConfig
+	var config imiqashoserver.AppConfig
 
 	config.Type = "printer"
 	config.Name = "shop-printer"
-	config.Location = "http://192.168.8.101:8080"
+	config.Location = "http://192.168.8.101"
 	config.Port = "8080"
 	config.Status = "active"
 
-	config.CreateHttpConfig()
+	config.CreateAppConfig()
 }
 
-*/
-func TestGetHttpConfig(t *testing.T) {
 
-	configs, err := imiqashoserver.ReadHttpConfig()
+func TestGetAppConfig(t *testing.T) {
+
+	configs, err := imiqashoserver.ReadAppConfig()
 
 	if err != nil{
 
