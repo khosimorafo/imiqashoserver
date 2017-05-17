@@ -186,7 +186,7 @@ func (config *AppConfig) CreateAppConfig() (error) {
 	return collection.Insert(config)
 }
 
-func ReadAppConfig() ([]AppConfig, error) {
+func ReadAppConfig() (*[]AppConfig, error) {
 
 	collection := AppCollection().DB("feerlaroc").C("configuration")
 
@@ -198,7 +198,7 @@ func ReadAppConfig() ([]AppConfig, error) {
 		return nil, err
 	}
 
-	return hc, nil
+	return &hc, nil
 }
 
 func RemoveFinancialPeriodRange() error {
@@ -210,7 +210,7 @@ func RemoveFinancialPeriodRange() error {
 	return nil
 }
 
-func (config *AppConfig) GetAppConfigurations() ([]AppConfig, error)  {
+func (config *AppConfig) GetAppConfigurations() (*[]AppConfig, error)  {
 
 	return ReadAppConfig()
 }

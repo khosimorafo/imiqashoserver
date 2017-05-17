@@ -435,7 +435,7 @@ func TestGetAppConfig(t *testing.T) {
 		return
 	}
 
-	for _, config := range configs{
+	for _, config := range *configs{
 
 		t.Log("Port is ", config.Port)
 		t.Log("Name is ", config.Name)
