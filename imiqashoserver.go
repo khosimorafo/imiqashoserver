@@ -375,6 +375,30 @@ func GetSequentialPeriodRange(start string, end string) ([]Period, error){
 	return periods, nil
 }
 
+func GetSequentialPeriodRangeFromToCurrent(start string) ([]Period, error){
+
+	ps, err := ReadFinancialPeriodRange("open")
+
+	p, err := GetPeriodByName(start)
+	p_latest,err := GetLatestPeriod()
+
+
+	if err != nil {
+
+		return []Period{}, err
+	}
+
+	periods := make([]Period, 0)
+	for _, period := range ps {
+
+		if (period.Index >= p.Index) && (period.Index <= p_latest.Index) {
+
+			periods = append(periods, period)
+		}
+	}
+	return periods, nil
+}
+
 func GetSequentialPeriodRangeAfterToCurrent(start string) ([]Period, error){
 
 	ps, err := ReadFinancialPeriodRange("open")
@@ -638,6 +662,17 @@ func DateFormatter(date string) (string, time.Time, error)  {
 		return "", t, errors.New("Date submitted is invalid. ")
 	}
 
+
+	return ret_t, t, nil
+}
+
+func DateGetNow() (string, time.Time, error)  {
+
+	layout := "2006-01-02"
+
+	t := time.Now()
+
+	ret_t := t.Format(layout)
 
 	return ret_t, t, nil
 }

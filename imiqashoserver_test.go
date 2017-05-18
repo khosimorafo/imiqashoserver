@@ -23,6 +23,20 @@ func TestMain(m *testing.M) {
 	os.Exit(code)
 }
 
+func TestDateGetNow(t *testing.T) {
+
+	t_str, t1, err := imiqashoserver.DateGetNow()
+
+	if err !=nil {
+
+		t.Error("Failed to get date ", err)
+		return
+	}
+
+	t.Log("Full date is : ", t1.String())
+	t.Log("Formatted date is : ", t_str)
+}
+
 /*
 func TestCreateFinancialPeriodRange(t *testing.T) {
 
@@ -410,7 +424,7 @@ func TestPeriod_GetPeriodDiscountDate(t *testing.T) {
 	t.Log("Discount end date is : ", t_str)
 	t.Log("Can discount : ", can_discount)
 }
-*/
+
 func TestCreateAppConfig(t *testing.T) {
 
 	var config imiqashoserver.AppConfig
@@ -423,7 +437,6 @@ func TestCreateAppConfig(t *testing.T) {
 
 	config.CreateAppConfig()
 }
-
 
 func TestGetAppConfig(t *testing.T) {
 
@@ -443,3 +456,24 @@ func TestGetAppConfig(t *testing.T) {
 		t.Log("Location is ", config.Location)
 	}
 }
+
+
+
+func TestGetSequentialPeriodRangeFromToCurrent(t *testing.T) {
+
+	periods, err := imiqashoserver.GetSequentialPeriodRangeFromToCurrent("March-2017")
+
+	if err != nil{
+
+		t.Error("Failed to get a period for the date given : ")
+		return
+	}
+
+	for _, period := range periods{
+
+		t.Log("Index is ", period.Index)
+		t.Log("Name is ", period.Name)
+	}
+}
+
+*/
