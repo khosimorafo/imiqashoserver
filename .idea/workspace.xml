@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d840c3cb-b204-434f-bc5a-0fb7f449551b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imiqashoserver.go" afterPath="$PROJECT_DIR$/imiqashoserver.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imiqashoserver_test.go" afterPath="$PROJECT_DIR$/imiqashoserver_test.go" />
-    </list>
+    <list default="true" id="d840c3cb-b204-434f-bc5a-0fb7f449551b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +18,8 @@
       <file leaf-file-name="imiqashoserver.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="377" column="42" lean-forward="false" selection-start-line="377" selection-start-column="5" selection-end-line="377" selection-end-column="42" />
+            <state relative-caret-position="254">
+              <caret line="673" column="0" lean-forward="true" selection-start-line="673" selection-start-column="0" selection-end-line="673" selection-end-column="0" />
               <folding>
                 <element signature="e#24#210#0" expanded="true" />
                 <element signature="n#!!block;n#AppCollection#0" expanded="false" />
@@ -38,7 +35,9 @@
                 <element signature="e#2282#2657#0" expanded="false" />
                 <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
                 <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+                <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
                 <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+                <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
                 <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
                 <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
                 <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -46,6 +45,8 @@
                 <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
                 <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
                 <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+                <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+                <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
                 <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
                 <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
                 <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -68,22 +69,22 @@
       <file leaf-file-name="imiqashoserver_test.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="452" column="0" lean-forward="true" selection-start-line="452" selection-start-column="0" selection-end-line="452" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="e#29#97#0" expanded="true" />
                 <element signature="n#!!block;n#TestMain#0" expanded="false" />
-                <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-                <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-                <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-                <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-                <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-                <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-                <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-                <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-                <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-                <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-                <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+                <element signature="e#5935#8300#0" expanded="false" />
+                <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+                <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+                <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+                <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+                <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+                <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+                <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+                <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+                <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+                <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -243,7 +244,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3064275" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3064275" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -287,7 +288,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -295,6 +298,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -320,17 +325,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -354,7 +359,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -362,6 +369,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -387,17 +396,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -421,7 +430,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -429,6 +440,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -454,17 +467,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -488,7 +501,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -496,6 +511,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -521,17 +538,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -555,7 +572,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -563,6 +582,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -588,17 +609,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -622,7 +643,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -630,6 +653,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -655,17 +680,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -689,7 +714,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -697,6 +724,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -722,17 +751,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -756,7 +785,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -764,6 +795,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -789,17 +822,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -823,7 +856,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -831,6 +866,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -856,17 +893,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -890,7 +927,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -898,6 +937,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -923,17 +964,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -957,7 +998,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -965,6 +1008,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -990,17 +1035,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1024,7 +1069,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -1032,6 +1079,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -1057,17 +1106,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1091,7 +1140,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -1099,6 +1150,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -1124,17 +1177,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1158,7 +1211,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -1166,6 +1221,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -1191,17 +1248,17 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1225,7 +1282,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -1233,6 +1292,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -1258,25 +1319,25 @@
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="377" column="42" lean-forward="false" selection-start-line="377" selection-start-column="5" selection-end-line="377" selection-end-column="42" />
+        <state relative-caret-position="254">
+          <caret line="673" column="0" lean-forward="true" selection-start-line="673" selection-start-column="0" selection-end-line="673" selection-end-column="0" />
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
@@ -1292,7 +1353,9 @@
             <element signature="e#2282#2657#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
             <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
             <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
             <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
@@ -1300,6 +1363,8 @@
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
             <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
             <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#Create#1" expanded="false" />
@@ -1320,22 +1385,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="452" column="0" lean-forward="true" selection-start-line="452" selection-start-column="0" selection-end-line="452" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#29#97#0" expanded="true" />
             <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <marker date="1495036268726" expanded="false" signature="1565:1716" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="1753:2115" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="2155:2473" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3026:3221" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="3272:3479" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="4048:5696" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5744:5937" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="5977:6261" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="6842:7121" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7162:7376" ph="{...}" />
-            <marker date="1495036268726" expanded="false" signature="7414:7716" ph="{...}" />
+            <element signature="e#5935#8300#0" expanded="false" />
+            <marker date="1495092718495" expanded="false" signature="1798:1949" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="1986:2348" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="2388:2706" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3259:3454" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="3505:3712" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="4281:5929" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="5977:6170" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7075:7354" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7395:7609" ph="{...}" />
+            <marker date="1495092718495" expanded="false" signature="7647:7949" ph="{...}" />
           </folding>
         </state>
       </provider>
