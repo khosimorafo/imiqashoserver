@@ -23,6 +23,20 @@ func TestMain(m *testing.M) {
 	os.Exit(code)
 }
 
+func TestReadFinancialPeriodRange(t *testing.T) {
+
+	ps, err := imiqashoserver.ReadFinancialPeriodRange("open")
+
+	if err != nil{
+
+		t.Errorf("Failed to read records.  > %v", err)
+	}
+
+	t.Log(len(ps))
+}
+
+/*
+
 func TestDateGetNow(t *testing.T) {
 
 	t_str, t1, err := imiqashoserver.DateGetNow()
@@ -37,7 +51,6 @@ func TestDateGetNow(t *testing.T) {
 	t.Log("Formatted date is : ", t_str)
 }
 
-/*
 func TestCreateFinancialPeriodRange(t *testing.T) {
 
 	err := imiqashoserver.RemoveFinancialPeriodRange()
