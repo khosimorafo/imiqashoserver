@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d840c3cb-b204-434f-bc5a-0fb7f449551b" name="Default" comment="" />
+    <list default="true" id="d840c3cb-b204-434f-bc5a-0fb7f449551b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imiqashoserver.go" afterPath="$PROJECT_DIR$/imiqashoserver.go" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +21,8 @@
       <file leaf-file-name="imiqashoserver.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="130" column="45" lean-forward="false" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
+            <state relative-caret-position="439">
+              <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
               <folding>
                 <element signature="e#24#210#0" expanded="true" />
                 <element signature="n#!!block;n#AppCollection#0" expanded="false" />
@@ -32,7 +35,7 @@
                 <element signature="n#!!block;n#Delete#0" expanded="false" />
                 <element signature="e#1708#1735#0" expanded="false" />
                 <element signature="e#1752#1964#0" expanded="false" />
-                <element signature="e#2282#2657#0" expanded="false" />
+                <element signature="e#1978#2263#0" expanded="false" />
                 <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
                 <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
                 <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -44,6 +47,7 @@
                 <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
                 <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
                 <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+                <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
                 <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
                 <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
                 <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -58,6 +62,7 @@
                 <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
                 <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
                 <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+                <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
                 <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
                 <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
                 <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -106,9 +111,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/imiqashoserver.go" />
         <option value="$PROJECT_DIR$/imiqashoserver_test.go" />
         <option value="$PROJECT_DIR$/payments.go" />
+        <option value="$PROJECT_DIR$/imiqashoserver.go" />
       </list>
     </option>
   </component>
@@ -140,7 +145,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -165,6 +169,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,12 +255,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25710014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -280,8 +285,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1830">
+          <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
@@ -294,7 +299,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -306,6 +311,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -320,6 +326,303 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
+            <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
+            <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
+            <element signature="n#!!block;n#RemoveLatePaymentRequests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#29#97#0" expanded="true" />
+            <element signature="n#!!block;n#TestMain#0" expanded="false" />
+            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
+            <marker date="1495098481411" expanded="true" signature="2000:2151" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="2188:2550" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="2590:2908" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="3461:3656" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="3707:3914" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="4483:6131" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="6179:6372" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7277:7556" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7597:7811" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7849:8151" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#210#0" expanded="true" />
+            <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
+            <element signature="e#1708#1735#0" expanded="false" />
+            <element signature="e#1752#1964#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
+            <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
+            <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
+            <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
+            <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
+            <element signature="n#!!block;n#Create#1" expanded="false" />
+            <element signature="n#!!block;n#Read#1" expanded="false" />
+            <element signature="n#!!block;n#Update#1" expanded="false" />
+            <element signature="n#!!block;n#Delete#1" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsApproved#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsExpired#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
+            <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
+            <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
+            <element signature="n#!!block;n#RemoveLatePaymentRequests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#29#97#0" expanded="true" />
+            <element signature="n#!!block;n#TestMain#0" expanded="false" />
+            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
+            <marker date="1495098481411" expanded="true" signature="2000:2151" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="2188:2550" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="2590:2908" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="3461:3656" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="3707:3914" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="4483:6131" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="6179:6372" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7277:7556" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7597:7811" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7849:8151" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#210#0" expanded="true" />
+            <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
+            <element signature="e#1708#1735#0" expanded="false" />
+            <element signature="e#1752#1964#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
+            <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
+            <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
+            <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
+            <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
+            <element signature="n#!!block;n#Create#1" expanded="false" />
+            <element signature="n#!!block;n#Read#1" expanded="false" />
+            <element signature="n#!!block;n#Update#1" expanded="false" />
+            <element signature="n#!!block;n#Delete#1" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsApproved#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsExpired#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
+            <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
+            <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
+            <element signature="n#!!block;n#RemoveLatePaymentRequests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#29#97#0" expanded="true" />
+            <element signature="n#!!block;n#TestMain#0" expanded="false" />
+            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
+            <marker date="1495098481411" expanded="true" signature="2000:2151" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="2188:2550" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="2590:2908" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="3461:3656" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="3707:3914" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="4483:6131" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="6179:6372" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7277:7556" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7597:7811" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7849:8151" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#210#0" expanded="true" />
+            <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
+            <element signature="e#1708#1735#0" expanded="false" />
+            <element signature="e#1752#1964#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
+            <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
+            <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
+            <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
+            <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
+            <element signature="n#!!block;n#Create#1" expanded="false" />
+            <element signature="n#!!block;n#Read#1" expanded="false" />
+            <element signature="n#!!block;n#Update#1" expanded="false" />
+            <element signature="n#!!block;n#Delete#1" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsApproved#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsExpired#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
+            <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
+            <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
+            <element signature="n#!!block;n#RemoveLatePaymentRequests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#29#97#0" expanded="true" />
+            <element signature="n#!!block;n#TestMain#0" expanded="false" />
+            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
+            <marker date="1495098481411" expanded="true" signature="2000:2151" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="2188:2550" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="2590:2908" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="3461:3656" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="3707:3914" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="4483:6131" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="6179:6372" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7277:7556" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7597:7811" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7849:8151" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#210#0" expanded="true" />
+            <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
+            <element signature="e#1708#1735#0" expanded="false" />
+            <element signature="e#1752#1964#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
+            <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
+            <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
+            <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
+            <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
+            <element signature="n#!!block;n#Create#1" expanded="false" />
+            <element signature="n#!!block;n#Read#1" expanded="false" />
+            <element signature="n#!!block;n#Update#1" expanded="false" />
+            <element signature="n#!!block;n#Delete#1" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsApproved#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsExpired#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -366,7 +669,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -378,6 +681,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -392,6 +696,81 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
+            <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
+            <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
+            <element signature="n#!!block;n#RemoveLatePaymentRequests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#29#97#0" expanded="true" />
+            <element signature="n#!!block;n#TestMain#0" expanded="false" />
+            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
+            <marker date="1495098481411" expanded="true" signature="2000:2151" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="2188:2550" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="2590:2908" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="3461:3656" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="3707:3914" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="4483:6131" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="6179:6372" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7277:7556" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7597:7811" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7849:8151" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#210#0" expanded="true" />
+            <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
+            <element signature="e#1708#1735#0" expanded="false" />
+            <element signature="e#1752#1964#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
+            <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
+            <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
+            <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
+            <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
+            <element signature="n#!!block;n#Create#1" expanded="false" />
+            <element signature="n#!!block;n#Read#1" expanded="false" />
+            <element signature="n#!!block;n#Update#1" expanded="false" />
+            <element signature="n#!!block;n#Delete#1" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsApproved#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsExpired#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -438,7 +817,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -450,6 +829,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -464,6 +844,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -510,7 +891,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -522,6 +903,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -536,6 +918,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -582,7 +965,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -594,6 +977,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -608,6 +992,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -654,7 +1039,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -666,6 +1051,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -680,6 +1066,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -726,7 +1113,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -738,6 +1125,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -752,6 +1140,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -798,7 +1187,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -810,6 +1199,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -824,6 +1214,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -870,7 +1261,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -882,6 +1273,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -896,6 +1288,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -942,7 +1335,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -954,6 +1347,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -968,6 +1362,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -1014,7 +1409,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -1026,6 +1421,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -1040,6 +1436,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -1086,7 +1483,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -1098,6 +1495,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -1112,78 +1510,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
-            <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
-            <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
-            <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
-            <element signature="n#!!block;n#RemoveLatePaymentRequests#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#97#0" expanded="true" />
-            <element signature="n#!!block;n#TestMain#0" expanded="false" />
-            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
-            <marker date="1495098481411" expanded="true" signature="2000:2151" ph="{...}" />
-            <marker date="1495098481411" expanded="false" signature="2188:2550" ph="{...}" />
-            <marker date="1495098481411" expanded="false" signature="2590:2908" ph="{...}" />
-            <marker date="1495098481411" expanded="false" signature="3461:3656" ph="{...}" />
-            <marker date="1495098481411" expanded="false" signature="3707:3914" ph="{...}" />
-            <marker date="1495098481411" expanded="false" signature="4483:6131" ph="{...}" />
-            <marker date="1495098481411" expanded="false" signature="6179:6372" ph="{...}" />
-            <marker date="1495098481411" expanded="false" signature="7277:7556" ph="{...}" />
-            <marker date="1495098481411" expanded="false" signature="7597:7811" ph="{...}" />
-            <marker date="1495098481411" expanded="false" signature="7849:8151" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#210#0" expanded="true" />
-            <element signature="n#!!block;n#AppCollection#0" expanded="false" />
-            <element signature="e#725#873#0" expanded="false" />
-            <element signature="e#897#1036#0" expanded="false" />
-            <element signature="e#1059#1193#0" expanded="false" />
-            <element signature="n#!!block;n#Create#0" expanded="false" />
-            <element signature="n#!!block;n#Read#0" expanded="false" />
-            <element signature="n#!!block;n#Update#0" expanded="false" />
-            <element signature="n#!!block;n#Delete#0" expanded="false" />
-            <element signature="e#1708#1735#0" expanded="false" />
-            <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
-            <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
-            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
-            <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
-            <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
-            <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
-            <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
-            <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
-            <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
-            <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
-            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
-            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
-            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
-            <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
-            <element signature="n#!!block;n#Create#1" expanded="false" />
-            <element signature="n#!!block;n#Read#1" expanded="false" />
-            <element signature="n#!!block;n#Update#1" expanded="false" />
-            <element signature="n#!!block;n#Delete#1" expanded="false" />
-            <element signature="n#!!block;n#RequestStatusAsApproved#0" expanded="false" />
-            <element signature="n#!!block;n#RequestStatusAsExpired#0" expanded="false" />
-            <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
-            <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
-            <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -1230,7 +1557,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -1242,6 +1569,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -1256,6 +1584,81 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
+            <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
+            <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
+            <element signature="n#!!block;n#RemoveLatePaymentRequests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding>
+            <element signature="e#29#97#0" expanded="true" />
+            <element signature="n#!!block;n#TestMain#0" expanded="false" />
+            <element signature="n#!!block;n#TestReadFinancialPeriodRange#0" expanded="false" />
+            <marker date="1495098481411" expanded="true" signature="2000:2151" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="2188:2550" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="2590:2908" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="3461:3656" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="3707:3914" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="4483:6131" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="6179:6372" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7277:7556" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7597:7811" ph="{...}" />
+            <marker date="1495098481411" expanded="false" signature="7849:8151" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#210#0" expanded="true" />
+            <element signature="n#!!block;n#AppCollection#0" expanded="false" />
+            <element signature="e#725#873#0" expanded="false" />
+            <element signature="e#897#1036#0" expanded="false" />
+            <element signature="e#1059#1193#0" expanded="false" />
+            <element signature="n#!!block;n#Create#0" expanded="false" />
+            <element signature="n#!!block;n#Read#0" expanded="false" />
+            <element signature="n#!!block;n#Update#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
+            <element signature="e#1708#1735#0" expanded="false" />
+            <element signature="e#1752#1964#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
+            <element signature="n#!!block;n#ReadAppConfig#0" expanded="false" />
+            <element signature="n#!!block;n#RemoveFinancialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetAppConfigurations#0" expanded="false" />
+            <element signature="n#!!block;n#GetProRataDays#0" expanded="false" />
+            <element signature="n#!!block;n#GetDaysLeft#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
+            <element signature="n#!!block;n#GetPeriodDiscountDate#0" expanded="false" />
+            <element signature="n#!!block;n#GetNextPeriodByName#0" expanded="false" />
+            <element signature="n#!!block;n#Create#1" expanded="false" />
+            <element signature="n#!!block;n#Read#1" expanded="false" />
+            <element signature="n#!!block;n#Update#1" expanded="false" />
+            <element signature="n#!!block;n#Delete#1" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsApproved#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsExpired#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
+            <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -1302,7 +1705,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -1314,6 +1717,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -1328,6 +1732,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -1374,7 +1779,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -1386,6 +1791,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -1400,6 +1806,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -1446,7 +1853,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -1458,6 +1865,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -1472,6 +1880,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -1518,7 +1927,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -1530,6 +1939,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -1544,6 +1954,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />
@@ -1574,6 +1985,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/payments.go" />
     <entry file="file://$PROJECT_DIR$/imiqashoserver_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1596,11 +2008,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/payments.go" />
     <entry file="file://$PROJECT_DIR$/imiqashoserver.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="130" column="45" lean-forward="false" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
+        <state relative-caret-position="439">
+          <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
           <folding>
             <element signature="e#24#210#0" expanded="true" />
             <element signature="n#!!block;n#AppCollection#0" expanded="false" />
@@ -1613,7 +2024,7 @@
             <element signature="n#!!block;n#Delete#0" expanded="false" />
             <element signature="e#1708#1735#0" expanded="false" />
             <element signature="e#1752#1964#0" expanded="false" />
-            <element signature="e#2282#2657#0" expanded="false" />
+            <element signature="e#1978#2263#0" expanded="false" />
             <element signature="n#!!block;n#CreateFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#ReadFinancialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#CreateAppConfig#0" expanded="false" />
@@ -1625,6 +2036,7 @@
             <element signature="n#!!block;n#GetPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByName#0" expanded="false" />
             <element signature="n#!!block;n#GetPeriodByIndex#0" expanded="false" />
+            <element signature="n#!!block;n#GetLatestPeriod#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRange#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeFromToCurrent#0" expanded="false" />
             <element signature="n#!!block;n#GetSequentialPeriodRangeAfterToCurrent#0" expanded="false" />
@@ -1639,6 +2051,7 @@
             <element signature="n#!!block;n#RequestStatusAsPaid#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsRejected#0" expanded="false" />
             <element signature="n#!!block;n#RequestStatusAsVoided#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFinedCustomer#0" expanded="false" />
             <element signature="n#!!block;n#GetLatePaymentRequests#0" expanded="false" />
             <element signature="n#!!block;n#DateFormatter#0" expanded="false" />
             <element signature="n#!!block;n#DateGetNow#0" expanded="false" />

@@ -128,6 +128,15 @@ type LatePayment struct {
 	MustPayBy    string 	`json:"mustpaybydate,omitempty"`
 }
 
+type FinedCustomer struct {
+
+	CustomerName string 	`json:"customername,omitempty"`
+	CustomerID   string 	`json:"customerid,omitempty"`
+	InvoiceID    string 	`json:"invoiceid,omitempty"`
+	Period 	     string 	`json:"periodname,omitempty"`
+	Date         string 	`json:"date,omitempty"`
+}
+
 func CreateFinancialPeriodRange (start_date string, no_of_months int) (error) {
 
 	collection := AppCollection().DB("feerlaroc").C("periods")
@@ -623,6 +632,15 @@ func (payment LatePayment) RequestStatusAsVoided() (string, error){
 	collection := AppCollection().DB("feerlaroc").C("late_payments")
 
 	collection.Update(bson.M{"invoiceid": payment.InvoiceID}, bson.M{"$set": bson.M{"status": "void"}})
+
+	return "success", nil
+}
+
+func (customer FinedCustomer) CreateFinedCustomer() (string, error) {
+
+	collection := AppCollection().DB("feerlaroc").C("fined_customer")
+
+	collection.Insert(customer)
 
 	return "success", nil
 }
